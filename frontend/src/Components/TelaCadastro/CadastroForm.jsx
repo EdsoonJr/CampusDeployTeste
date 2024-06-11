@@ -34,7 +34,7 @@ const CadastroForm = () => {
     };
     
     try {
-      const response = await axios.post('http://localhost:3001/users', userData);
+      const response = await axios.post('https://campus-deploy-api.vercel.app/users', userData);
       navigate('/main'); // Redirecionar para a página principal após o cadastro
     } catch (error) {
       // Tratamento de erro

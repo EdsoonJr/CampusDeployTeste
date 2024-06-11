@@ -20,7 +20,7 @@ const LoginForm = () => {
     console.log('Dados do formulário de login:', loginData);
 
     try {
-      const response = await axios.post('http://localhost:3001/login', loginData);
+      const response = await axios.post('https://campus-deploy-api.vercel.app/login', loginData);
       console.log('Resposta do servidor:', response.data);
       navigate('/main'); // Redirecionar para a página principal após o login
     } catch (error) {
