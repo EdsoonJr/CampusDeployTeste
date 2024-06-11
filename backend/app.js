@@ -10,10 +10,8 @@ const server = http.createServer(app);
 
 const allowedOrigins = ['https://campus-deploy-front.vercel.app'];
 
-// Configure CORS for Express
 app.use(cors({
     origin: function (origin, callback) {
-        // Allow requests with no origin like mobile apps or curl requests
         if (!origin) {
             console.log('Request without origin allowed');
             return callback(null, true);
@@ -32,7 +30,6 @@ app.use(bodyParser.json());
 
 const port = process.env.PORT || 3001;
 
-// Configure CORS for Socket.IO
 const io = socketIo(server, {
     cors: {
         origin: allowedOrigins,
@@ -62,12 +59,5 @@ require('./infra/database/mongo/conection');
 
 const UserController = require('./app/controllers/UserController');
 
-app.post('/users', (req, res) => {
-    console.log('Recebendo requisição POST para /users com body:', req.body);
-    UserController.createUser(req, res);
-});
-
-app.post('/login', (req, res) => {
-    console.log('Recebendo requisição POST para /login com body:', req.body);
-    UserController.loginUser(req, res);
-});
+app.post('/users', UserController.createUser);
+app.post('/login', UserController.loginUser);
