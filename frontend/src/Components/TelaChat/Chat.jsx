@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './Chat.css';
 
-const socket = io('wss://campus-deploy-api.vercel.app/socket.io/?EIO=4&transport=websocket', {
+const socket = io('wss://campus-deploy-api.vercel.app', {
   transports: ['websocket', 'polling'], // Especifique os transportes
 });
 

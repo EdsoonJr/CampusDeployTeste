@@ -32,7 +32,7 @@ const port = process.env.PORT || 3001;
 
 const io = socketIo(server, {
     cors: {
-        origin: "*",
+        origin: allowedOrigins,
         methods: ["GET", "POST"],
         credentials: true
     }
