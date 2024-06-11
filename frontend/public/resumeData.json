@@ -1,0 +1,143 @@
+{
+  "main": {
+    "name":"Campus Seguro",
+    "description":"Promovendo um ambiente educacional seguro e saudável, conectando instituição de ensino,responsáveis e alunos na luta contra o bullying.",
+    "image":"logo-uninassau.png",
+    "bio":"O Núcleo de Atendimento ao Educando (NAE) é uma estrutura organizacional presente na instituição de ensino com o objetivo principal de promover o bem-estar e o desenvolvimento integral dos alunos. O NAE oferece suporte pedagógico, psicológico e social, atuando como um ponto de referência para estudantes que necessitam de orientação e acompanhamento em diversas áreas da vida acadêmica e pessoal.",
+    "contactmessage":"Deixe uma mensagem,caso o chat não esteja em horário de funcionamento",
+    "email": "nae.uninassau@gmail.com",
+    "phone": "(81) 0800-7882",
+    "github":"https://github.com/nordicgiant2",
+    "project":"https://github.com/nordicgiant2",
+    "address":{
+      "street":"Juvenal Celito Silva",
+      "city":"Lizama Maria Rest",
+      "state":"Regiona Jamis Lingard",
+      "zip": "(Your Zip/Postal Code)",
+      "cemail":"JuvenalCelito@gmail.com",
+      "cemail2":"LizamaMaria@gmail.com",
+      "cemail3":"RegionaJamis@gmail.com"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload":"http://timbakerdev.com",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://github.com",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"http://twitter.com",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "objectives":[
+      {
+        "title":"A Plataforma",
+        "subtitle":"Resumo",
+        "description":"O 'CampusSeguro' é uma plataforma online inovadora dedicada a combater e minimizar os casos de bullying nas instituições de ensino superior. Atuamos como um elo de comunicação eficiente entre a instituição de ensino e os responsáveis pelos alunos, proporcionando um ambiente educacional mais seguro, inclusivo e saudável."
+      },
+      {
+        "title":"Objetivos",
+        "subtitle":"Combate ao Bullying:",
+        "description":" Reduzir significativamente os casos de bullying nas instituições de ensino superior, oferecendo um canal seguro e confidencial para denúncias e apoio."
+      },
+      {
+        "subtitle":"Comunicação Efetiva:",
+        "description":"Estabelecer uma comunicação direta e eficiente entre a instituição de ensino e os responsáveis, mantendo-os informados sobre incidentes e medidas tomadas."
+      }
+    ],
+    "work":[
+      {
+        "company":"Awesome Design Studio",
+        "title":"Senior UX God ",
+        "years":"March 2018 - Present",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company":"Super Cool Studio",
+        "title":"Junior bug fixer",
+        "years":"March 2017 - February 2018",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"60%"
+      },
+      {
+        "name":"VueJs",
+        "level":"55%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"PHP",
+        "level":"80%"
+      },
+      {
+        "name":"Swift",
+        "level":"50%"
+      },
+      {
+        "name":"JAVA",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "O cyberbullying em contexto universitário do Brasil e Portugal",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "artigo1.png",
+        "url": "https://periodicos.fclar.unesp.br/iberoamericana/article/view/9067"
+      },
+      {
+        "title": "Agressão entre pares no espaço virtual",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "artigo2.png",
+        "url": "https://www.scielo.br/j/pc/a/N83JQQXmpnxNkQNwcVvmZgh/?lang=pt&format=html"
+      },
+      {
+        "title": "Significados, experiências e repercussões do cyberbullying",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "artigo3.png",
+        "url": "http://www.scielo.org.co/scielo.php?pid=S1794-47242022000300005&script=sci_arttext"
+      },
+      {
+        "title": "Políticas públicas federais e estaduais para prevenção e contenção ao bullying e cyberbullying",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "artigo4.png",
+        "url": "https://repositorio.unesp.br/items/87412d57-d890-4818-aa9a-a451498500a8"
+      }
+     
+    ]
+  }
+}

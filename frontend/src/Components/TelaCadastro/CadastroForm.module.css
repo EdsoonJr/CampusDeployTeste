@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: url('https://imgur.com/iqIiCIt.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cadastroForm {
+  max-width: 300px; /* Largura máxima para o formulário */
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Restante do seu CSS */
+
+
+.cadastroTitle {
+  font-size: 1.75rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+select,
+input[type='radio'] + label,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  margin-right: 0.5rem;
+}
+
+button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
