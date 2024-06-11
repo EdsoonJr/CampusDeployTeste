@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './Chat.css';
 
-const socket = io('https://campus-deploy-api.vercel.app/');
+const socket = io('https://campus-deploy-api.vercel.app', {
+  transports: ['websocket', 'polling'], // Especifique os transportes
+});
+
 
 const Chat = () => {
   const [message, setMessage] = useState('');

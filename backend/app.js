@@ -8,20 +8,34 @@ require('dotenv').config();
 const app = express();
 const server = http.createServer(app);
 
-// Adicione as opções de configuração CORS para o socket.io
-const io = socketIo(server, {
-    cors: {
-        origin: "*",
-        methods: ["GET", "POST"]
-    }
-});
+const allowedOrigins = ['https://campus-deploy-front.vercel.app'];
 
-app.use(cors());
+// Configure CORS for Express
+app.use(cors({
+    origin: function(origin, callback) {
+        // Allow requests with no origin like mobile apps or curl requests
+        if (!origin) return callback(null, true);
+        if (allowedOrigins.indexOf(origin) === -1) {
+            const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            return callback(new Error(msg), false);
+        }
+        return callback(null, true);
+    }
+}));
+
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 3001;
 
-// Configuração do socket.io
+// Configure CORS for Socket.IO
+const io = socketIo(server, {
+    cors: {
+        origin: allowedOrigins,
+        methods: ["GET", "POST"],
+        credentials: true
+    }
+});
+
 io.on('connection', (socket) => {
     console.log('Novo cliente conectado');
 
