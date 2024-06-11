@@ -12,13 +12,18 @@ const allowedOrigins = ['https://campus-deploy-front.vercel.app'];
 
 // Configure CORS for Express
 app.use(cors({
-    origin: function(origin, callback) {
+    origin: function (origin, callback) {
         // Allow requests with no origin like mobile apps or curl requests
-        if (!origin) return callback(null, true);
+        if (!origin) {
+            console.log('Request without origin allowed');
+            return callback(null, true);
+        }
         if (allowedOrigins.indexOf(origin) === -1) {
             const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            console.error(msg, origin);
             return callback(new Error(msg), false);
         }
+        console.log('CORS allowed for origin:', origin);
         return callback(null, true);
     }
 }));
@@ -57,5 +62,12 @@ require('./infra/database/mongo/conection');
 
 const UserController = require('./app/controllers/UserController');
 
-app.post('/users', UserController.createUser);
-app.post('/login', UserController.loginUser);
+app.post('/users', (req, res) => {
+    console.log('Recebendo requisição POST para /users com body:', req.body);
+    UserController.createUser(req, res);
+});
+
+app.post('/login', (req, res) => {
+    console.log('Recebendo requisição POST para /login com body:', req.body);
+    UserController.loginUser(req, res);
+});
